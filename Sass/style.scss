@@ -85,7 +85,7 @@ body{
                 width: 100%;
                 font-size: 14px;
                 padding: 12px;
-                border-radius: 20px;
+                border-radius: 30px;
                 box-shadow: 0 1px 3px $DarkGrayishBlue;
                 border: none;
         
@@ -204,7 +204,7 @@ body{
                 width: 80%;
                 font-size: 14px;
                 padding: 12px;
-                border-radius: 20px;
+                border-radius: 30px;
                 box-shadow: 0 1px 3px $DarkGrayishBlue;
                 border: none;
 
@@ -477,9 +477,137 @@ footer{ background: #f5f6f8;
                 }
 
             }
+            .section-2{
+                align-self: center;
+
+                h2{
+                    align-self: center;
+                }
+
+                p{
+                    font-size: 1.1rem;
+                    width: 670px;
+                    align-self: center;
+                    margin-bottom: 60px;
+                    line-height: 1.5;
+                }
+                img{
+                    margin-top: 60px;
+                    width: 800px;
+                    height: 460px;
+                }
+            }
+            .section-3{
+                margin-bottom: 100px;
+                margin-top: 50px;
+                h2{
+                    margin-bottom: 0px ;
+                }
+                p{
+                font-size: 1.1rem;
+                margin: 10px;
+                margin-bottom: 60px;}
+
+                .container{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                .work-container{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .work{
+                    img{ margin: 10px 0 0 0;
+                    }
+                    width: 30%;
+                    height: 100px;
+                    margin-bottom: 140px;
+                        }
+
+                
+                }
+                .logos{
+                        
+                        flex-direction: row;
+                        gap: 140px;
+                        img{
+                            width: 150px;
+                        }
+                    
+                    }
+
+                }
 
 
+                    
+            }
+        .section-4{
+            width: 720px;
+
+            p{
+                font-size: 1.1rem;
+                
+                align-self: center;
+            }
+
+            .descarga{
+                    flex-direction: row;
+                    justify-content: center;
+                    margin-bottom: 40px;
+                    button{
+                        align-self: center;
+                        font-size: 1.1rem;
+                        width: 220px;
+                        height: 55px;
+                        margin-bottom: 40px;
+                    }
+                }
         }
+        }
+        footer{
+            .footer{
+                grid-template-columns: 120px 200px 200px 200px 100px;
+                gap: 40px;
+
+                img{
+                    margin-top: 0;
+                }
+            .contact{
+                
+                display: grid;
+                place-content: start;
+                grid-template-columns: auto auto auto;
+                
+                a{
+                    text-align: left;
+                    gap: 30px;
+                }
+                
+                .faqs{
+                    grid-column: 1;
+                }
+                .contact-us{
+                    grid-column: 1;
+                    grid-row: 2;
+                }
+                .privacy{
+                    grid-column: 2;
+                    grid-row: 1;
+                }
+                .kit{
+                    grid-column: 2;
+                    grid-row: 2;
+                }
+                .install{
+                    grid-column: 3;
+                    grid-row: 1;
+                }
+            }
+        }
+        }
+
     }
     
 }
