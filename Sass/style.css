@@ -67,6 +67,7 @@ body .container-body header .txt-header .descarga {
   gap: 10px;
 }
 body .container-body header .txt-header .descarga button {
+  font-family: "Bai Jamjuree";
   text-decoration: none;
   color: #fff;
   width: 100%;
@@ -75,6 +76,10 @@ body .container-body header .txt-header .descarga button {
   border-radius: 20px;
   box-shadow: 0 1px 3px hsl(210deg, 10%, 33%);
   border: none;
+}
+body .container-body header .txt-header .descarga button:hover {
+  cursor: pointer;
+  opacity: 90%;
 }
 body .container-body header .txt-header .descarga .btn-ios {
   background-color: hsl(171deg, 66%, 44%);
@@ -138,6 +143,7 @@ body .container-body .section-4 .descarga {
   gap: 10px;
 }
 body .container-body .section-4 .descarga button {
+  font-family: "Bai Jamjuree";
   margin-left: 40px;
   text-decoration: none;
   color: #fff;
@@ -147,6 +153,10 @@ body .container-body .section-4 .descarga button {
   border-radius: 20px;
   box-shadow: 0 1px 3px hsl(210deg, 10%, 33%);
   border: none;
+}
+body .container-body .section-4 .descarga button:hover {
+  cursor: pointer;
+  opacity: 90%;
 }
 body .container-body .section-4 .descarga .btn-ios {
   background-color: hsl(171deg, 66%, 44%);
@@ -280,5 +290,70 @@ body footer .attribution a {
     grid-column: 1/-1;
     grid-row: 2/-1;
     font-size: 20px;
+  }
+}
+@media screen and (min-width: 1240px) {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 40px;
+  }
+  body .container-body {
+    max-width: 1440px;
+    margin-top: 150px;
+  }
+  body .container-body header .txt-header h1 {
+    font-size: 3rem;
+  }
+  body .container-body header .txt-header p {
+    font-size: 1.2rem;
+    margin-bottom: 60px;
+  }
+  body .container-body header .txt-header .descarga {
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  body .container-body header .txt-header .descarga button {
+    align-self: center;
+    font-size: 1.1rem;
+    width: 220px;
+    height: 55px;
+    margin-bottom: 40px;
+  }
+  body .container-body .section-1 img {
+    width: 720px;
+    height: 570px;
+    margin: 0;
+    float: left;
+    margin-right: 60px;
+    margin-bottom: 80px;
+  }
+  body .container-body .section-1 .title-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  body .container-body .section-1 .title-1 h2 {
+    font-size: 2rem;
+  }
+  body .container-body .section-1 .title-1 p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    width: 700px;
+    align-self: center;
+  }
+  body .container-body .section-1 .lista {
+    text-align: left;
   }
 }/*# sourceMappingURL=style.css.map */

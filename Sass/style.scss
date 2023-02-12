@@ -79,6 +79,7 @@ body{
             flex-direction: column;
             gap: 10px;
             button{
+                font-family: $font;
                 text-decoration: none;
                 color: #fff;
                 width: 100%;
@@ -89,6 +90,10 @@ body{
                 border: none;
         
             }
+            button:hover{
+                cursor: pointer;
+                opacity: 90%;
+            } 
             .btn-ios{
                 background-color: $StrongCyan;
                 
@@ -192,6 +197,7 @@ body{
             flex-direction: column;
             gap: 10px;
             button{
+                font-family: $font;
                 margin-left: 40px;
                 text-decoration: none;
                 color: #fff;
@@ -203,6 +209,10 @@ body{
                 border: none;
 
                 
+            } 
+            button:hover{
+                cursor: pointer;
+                opacity: 90%;
             }
             .btn-ios{
                 background-color: $StrongCyan;
@@ -376,4 +386,100 @@ footer{ background: #f5f6f8;
 }
 
 
+}
+
+@media screen and (min-width:1240px) {
+
+
+    h1{
+        font-size: 40px;
+    }
+
+    h2{
+        font-size: 30px;
+    }
+
+    h3{
+        font-size: 25px;
+    }
+
+    p{
+        font-size: 20px;
+        line-height: 40px;
+    }
+    body{
+        .container-body{
+
+            max-width: 1440px;
+            margin-top: 150px;
+        
+
+
+            header{
+                
+                .txt-header{
+                    h1{
+                        font-size: 3rem;
+                    }
+                p{
+                    font-size: 1.2rem;
+                    margin-bottom: 60px;
+                }
+                .descarga{
+                    flex-direction: row;
+                    justify-content: center;
+                    margin-bottom: 40px;
+                    button{
+                        align-self: center;
+                        font-size: 1.1rem;
+                        width: 220px;
+                        height: 55px;
+                        margin-bottom: 40px;
+                    }
+                }
+            }
+            }
+            
+            .section-1{
+                
+                img{
+
+                    width: 720px;
+                    height: 570px;
+                    margin: 0;
+                    float: left;
+                    margin-right: 60px;
+                    margin-bottom: 80px;
+                }
+                .title-1{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    
+                    h2{
+                    font-size: 2rem;
+                    }
+                    p{
+                        font-size: 1.1rem;
+                        line-height: 1.5;
+                        width: 700px;
+                        align-self: center;
+                        
+                    }
+
+                    margin-bottom: 50px;
+                }
+                .lista{
+                    text-align: left;
+                    
+                    
+                }
+
+            }
+
+
+        }
+    }
+    
 }
