@@ -44,7 +44,9 @@ body .container-body {
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  overflow: hidden;
+}
+body .container-body header {
+  align-self: center;
 }
 body .container-body header img {
   width: 100px;
@@ -55,14 +57,8 @@ body .container-body header .txt-header {
   margin: 0 35px;
   width: 312px;
 }
-body .container-body header .txt-header h1 {
-  align-self: center;
-  margin: 20px 0;
-}
 body .container-body header .txt-header p {
-  font-size: 16px;
-  margin: 0 1px;
-  line-height: 25px;
+  margin: 20px;
 }
 body .container-body header .txt-header .descarga {
   margin: 30px 0;
@@ -89,10 +85,6 @@ body .container-body header .txt-header .descarga .btn-mac {
 body .container-body .section-1 .title-1 h2 {
   margin: 30px 30px;
 }
-body .container-body .section-1 .title-1 p {
-  margin: 30px;
-  line-height: 25px;
-}
 body .container-body .section-1 img {
   width: 312px;
   height: 240px;
@@ -102,17 +94,10 @@ body .container-body .section-1 .lista .text h3 {
   margin: 10px;
 }
 body .container-body .section-1 .lista .text p {
-  line-height: 25px;
   margin: 10px 30px 30px 30px;
 }
 body .container-body .section-2 h2 {
-  margin: 30px;
   margin-bottom: 10px;
-}
-body .container-body .section-2 p {
-  margin: 30px;
-  margin-top: 0;
-  line-height: 25px;
 }
 body .container-body .section-2 img {
   width: 312px;
@@ -124,8 +109,6 @@ body .container-body .section-3 h2 {
 }
 body .container-body .section-3 p {
   margin: 40px;
-  margin-top: 0;
-  line-height: 25px;
 }
 body .container-body .section-3 .container .work img {
   margin: 30px 0 0 0;
@@ -145,6 +128,7 @@ body .container-body .section-3 .container .logos img {
 }
 body .container-body .section-4 {
   width: 370px;
+  align-self: center;
 }
 body .container-body .section-4 .descarga {
   width: 100%;
@@ -189,7 +173,6 @@ body footer .footer .contact {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  margin-bottom: -20px;
   font-size: 12px;
 }
 body footer .footer .contact a {
@@ -199,11 +182,9 @@ body footer .footer .contact a {
 body footer .footer .redes {
   display: flex;
   margin-bottom: 30px;
-  gap: 20px;
+  gap: 40px;
 }
 body footer .footer .redes i {
-  width: 30px;
-  height: 30px;
   scale: 1.5;
   color: hsl(210deg, 10%, 33%);
 }
@@ -214,4 +195,90 @@ body footer .attribution {
 }
 body footer .attribution a {
   color: hsl(228deg, 45%, 44%);
+  text-decoration: none;
+}
+
+@media screen and (min-width: 720px) {
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 35px;
+  }
+  p {
+    font-size: 30px;
+    line-height: 50px;
+  }
+  body .container-body {
+    max-width: 700px;
+    background: url(/images/bg-header-desktop.png) top no-repeat contain;
+  }
+  body .container-body header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  body .container-body header img {
+    align-self: center;
+  }
+  body .container-body header .txt-header {
+    width: 80%;
+    margin: 0;
+  }
+  body .container-body header .txt-header .descarga {
+    margin: 0;
+    gap: 20px;
+  }
+  body .container-body header .txt-header .descarga button {
+    margin-left: 0;
+    align-self: center;
+    font-size: 30px;
+  }
+  body .container-body .section-4 {
+    width: 100%;
+  }
+  body .container-body .section-4 .descarga {
+    margin: 0;
+    gap: 20px;
+  }
+  body .container-body .section-4 .descarga button {
+    margin-left: 0;
+    align-self: center;
+    font-size: 30px;
+  }
+  body footer .footer {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px;
+    grid-template-rows: auto auto;
+    gap: 20px;
+  }
+  body footer .footer img {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  body footer .footer .contact {
+    grid-column: 2/4;
+    grid-row: 1/2;
+    flex-direction: row;
+    font-size: 20px;
+    gap: 25px;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+  body footer .footer .redes {
+    grid-column: 6;
+    grid-row: 1/2;
+    align-items: end;
+    margin-bottom: 0;
+  }
+  body footer .attribution {
+    grid-column: 1/-1;
+    grid-row: 2/-1;
+    font-size: 20px;
+  }
 }/*# sourceMappingURL=style.css.map */
